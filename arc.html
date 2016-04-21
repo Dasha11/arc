@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	 <head> 
+	 <script src="vue.js"></script>
+	<link rel="stylesheet" href="arc.css">
+	 <script type="text/javascript" src="arc.js"></script>
+     	<meta charset="utf-8">
+	 </head>
+	 <body>
+	 <div id="game">
+	 <div id="field" @mousemove='onMouse' v-bind:style="{width:fieldWidth.toString() + 'px'}">
+	 <div id="ball">
+	 
+	 </div>
+	 <div id="board" v-bind:style="{width:boardWidth.toString() + 'px',left:boardPosition.toString() + 'px'}">
+	</div>
+	</div>
+	</div>
+	 </body>
+</html>
